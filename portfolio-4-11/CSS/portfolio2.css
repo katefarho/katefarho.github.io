@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.container {
+	display: grid; 
+	height: 100vh;
+	grid-template-columns: 0.75fr 0.75fr 1fr 0.5fr;
+	grid-template-rows: 0.5fr 1.5fr 1fr;
+	grid-template-areas: 
+		"header header header header"
+		"nav main main main"
+		"nav content1 content2 content2";
+	grid-gap: 0.2rem; 	 
+}
+
+
+
+
+#case-study-content {
+	grid-column: 2 / span 2; 
+	grid-row: 3 / 3; 
+}
+
+#case-study-content figure {
+	display: flex; 
+	flex-direction: column; 
+	height: 100%; 
+	margin: 0;  
+	padding: 0.5em;  
+	box-sizing: border-box; 
+}
+
+#case-study-content img {
+	object-fit: scale-down; 
+	max-width: 100%; 
+	margin-top: 50px; 
+	margin-bottom: 50px; 
+	flex: 1; 
+	min-height: 0; 
+}
+p {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+img {
+	width: auto;
+	height: auto;
+}
+
+#header {
+	justify-content: start;
+	grid-area:header; 
+}
+
+#main { 
+	grid-area:main; 
+	justify-content: end; 
+}
+
+#nav {
+	 
+	grid-area:nav;
+	float: right;
+	overflow: hidden; 
+	margin-right: 25px;
+
+}
+
+li>a {
+	display: block;  
+	text-decoration: none;
+	text-align: end;
+	color: black; 
+	font-size: 25px; 
+	padding: 14px 16px;
+	position: relative;
+}
+
+li a:hover {
+	color: #EEEEEE; 
+	background-color: black; 
+}
+
+.active {
+	color: #494949;
+	padding: 20px; 
+ 
+}
+#content1 { 
+	grid-area:content1; 
+	padding-right: 25px; 
+	grid-column: 2 / span 2; 
+	grid-row: 3 / 3;
+}
+
+#content-1 figure {
+	display: flex; 
+	flex-direction: column; 
+	height: 50%; 
+	margin: 0;  
+	padding: 0.5em;  
+	box-sizing: border-box; 
+}
+
+#content-1 img {
+	object-fit: scale-down; 
+	max-width: 50%;  
+	margin-bottom: 25px; 
+	flex: 1; 
+	min-height: 0; 
+}
+
+
+
+@media only screen and (max-width: 550px) {
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr; 
+		grid-template-areas: 
+			"header"
+			"nav"
+			"main"
+			"content1"
+			"content2";
+	}
+}
+
+ul {
+	list-style-type: none; 
+	margin: 0; 
+	padding:0;
+	width: 300px; 
+	background-color: white;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif"; 
+	z-index: 12;
+	letter-spacing: 3px;
+}
+
+#me-content {
+	grid-column: 2 / span 2; 
+	grid-row: 3 / 3; 
+}
+
+.h1-index {
+	font-size: 52px; 
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	letter-spacing: 2px; 
+}
+
+.h2-index {
+	font-size: 25px; 
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	letter-spacing: 2px; 
+}
+
+.p-index {
+	font-size: 25px; 
+	letter-spacing: 2px; 
+	margin-bottom: 200px; 
+}
+
+.sticky { 
+	position: fixed; 
+	width: 100%;
+}
+
+.sticky + .container {
+	padding-top: 1200px; 
+}
+
+
+

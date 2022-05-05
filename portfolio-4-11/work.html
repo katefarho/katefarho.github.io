@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>work</title>
+<link href="CSS/portfolio2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="container">
+		<div id="header"><img src="images/logo-1.png" alt="logo"></div>
+		<div id="main"><img src="images/work-logo.jpg" alt="work-logo"></div>
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Me</a></li>
+				<li><a href="history.html">History</a></li>
+					<li><a class="active" href="#">My work</a></li>
+				
+			</ul>
+		</div>
+		<div id="content1">
+		<div><a href="Case-study-a.html"><img src="images/eastside-box-smaller.jpg" alt="eastside-box"></a></div>
+		</div>
+		
+	</div>
+	<script>
+		window.onscroll = function() {myFunction()};
+
+var nav = document.getElementById("nav");
+var sticky = nav.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    nav.classList.add("sticky")
+  } else {
+    nav.classList.remove("sticky");
+  }
+}
+	</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>case-study</title>
+<link href="CSS/portfolio2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="container">
+		<div id="header"><img src="images/logo-1.png" alt="logo"></div>
+		<div id="main"><img src="images/eastside-logo1024_1.jpg" alt="case-study-logo"></div>
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Me</a></li>
+				<li><a class="active" href="#">History</a></li>
+					<li><a href="work.html">My work</a></li>
+				
+			</ul>
+		</div>
+		<div id="case-study-content">
+		<!--overview of case study-->
+			<div><img src="images/1-overview-role1024_1.jpg" alt="case-study-logo"></div><div>
+			
+			</div>
+			<!--human centered design-->
+			<div><img src="images/design-thinking-process-1.jpg" alt="design-thinking-process"></div>
+			<!--stage 1-->
+			<div><img src="images/stage-1-personas-1.jpg" alt="personas"></div>
+			<!-- stage 2-->
+			<div><img src="images/Stage-2-survey-results-1.jpg" alt="stage-2"></div>
+			<div><img src="images/stage-2-problem-statement-1.jpg" alt="problem-statement"></div>
+			<!-- stage 3-->
+			<div><img src="images/stage-3-ideate-1.jpg" alt="ideate"></div>
+			<!-- stage 4-->
+			<div><img src="images/stage-4-prototype-1-1.jpg" alt="prototype"></div>
+			<div><img src="images/stage-4-prototype-2-1.jpg" alt="more-prototype"></div>
+			<div><img src="images/stage-4-prototype-3-1.jpg" alt="more prototype"></div>
+			<div><img src="images/stage-4-prototype-51024_1.jpg" alt="poster"></div>
+			<!--stage5-->
+			<div><img src="images/stage-5-test-results-1.jpg" alt="stage-5"></div>
+			<!--last thoughts-->
+			<div><img src="images/last-thoughts-1.jpg" alt="last-thoughts"></div>
+
+		
+		</div>
+	</div>
+	<script>
+		window.onscroll = function() {myFunction()};
+
+var nav = document.getElementById("nav");
+var sticky = nav.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    nav.classList.add("sticky")
+  } else {
+    nav.classList.remove("sticky");
+  }
+}
+	</script>
+</body>
+</html>

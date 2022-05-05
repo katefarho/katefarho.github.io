@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link href="CSS/portfolio2.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+	<div class="container">
+		<div id="header"><img src="images/logo-1.png" alt="logo"></div>
+		<div id="main"><img src="images/main-pic-sm-1.png" alt="main pic"></div>
+		<div id="nav">
+			<ul>
+				<li><a class="active" href="#">Me</a></li>
+				<li><a href="history.html">History</a></li>
+					<li><a href="work.html">My work</a></li>
+				
+			</ul>
+		</div>
+		<div id="me-content">
+			<h1 class="h1-index">Hello!!!</h1>
+			<h2 class="h2-index">Welcome to my portfolio :))</h2>
+			
+			
+			<p class="p-index">I am currently an Experience Architecture and Graphic Design Student at Michigan State University. I have a passion for <u>creating</u>, <u>helping others</u>, <u>and learning</u>. One day I hope to create designs like the ones on this site that can improve the lives of others and provoke action. </p>
+		
+	</div>
+	
+	<script>
+		window.onscroll = function() {myFunction()};
+
+var nav = document.getElementById("nav");
+var sticky = nav.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    nav.classList.add("sticky")
+  } else {
+    nav.classList.remove("sticky");
+  }
+}
+	</script>
+</body>
+</html>
